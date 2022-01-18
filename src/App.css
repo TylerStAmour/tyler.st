@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.a {
+  background-color: transparent;
+  transition: color 0.25s;
+  font-weight: bold;
+}
+
+.a:hover {
+  color: #5E0092
 }
