@@ -36,8 +36,8 @@ export default () => {
                     <img src={"/illustrations/coding.svg"} className={"max-w-lg"}/>
                 </div>
             </div>
-            <div className={"mt-48 mb-24"}>
-                <p className={"text-3xl mb-4"}>Where I started...</p>
+            <div className={"mt-48"}>
+                <p className={"text-4xl mb-4 font-title"}>Where I started...</p>
                 <div className={"grid grid-cols-2 gap-16"}>
                     <div>
                         <p className={"text-md"}>
@@ -56,15 +56,37 @@ export default () => {
                         </p>
                     </div>
                     <div className={"grid grid-cols-3 gap-2 mb-1"}>
-                        <Box title={"React"} icon={faReact} cursor />
-                        <Box title={"JavaScript"} icon={faJs} cursor />
-                        <Box title={"HTML"} icon={faHtml5} cursor />
-                        <Box title={"CSS"} icon={faCss3Alt} cursor />
-                        <Box title={"Golang"} icon={faGolang} cursor />
-                        <Box title={"Java"} icon={faJava} cursor />
-                        <Box title={"Python"} icon={faPython} cursor />
-                        <Box title={"MySQL"} icon={faDatabase} cursor />
-                        <Box title={"Linux"} icon={faLinux} cursor />
+                        <Box title={"React"} icon={faReact} />
+                        <Box title={"JavaScript"} icon={faJs} />
+                        <Box title={"HTML"} icon={faHtml5} />
+                        <Box title={"CSS"} icon={faCss3Alt} />
+                        <Box title={"Golang"} icon={faGolang} />
+                        <Box title={"Java"} icon={faJava} />
+                        <Box title={"Python"} icon={faPython} />
+                        <Box title={"MySQL"} icon={faDatabase} />
+                        <Box title={"Linux"} icon={faLinux} />
+                    </div>
+                </div>
+            </div>
+            <div className={"pb-32 pt-24"}>
+                <img className={"absolute left-0"} src={"/svg/line.svg"}/>
+            </div>
+            <div>
+                <p className={"text-4xl text-center"}>Some highlighted projects</p>
+                <div className={"grid grid-cols-2 gap-4 mt-20 gap-16"}>
+                    <div className={"flex flex-col"}>
+                        <p className={"text-4xl mb-4"}>AuroraHosts Ltd</p>
+                        <p>
+                            Myself along with 4 other partners founded
+                            <a className={"text-secondary"} href={"https://aurorahosts.com/"} target={"_blank"}> AuroraHosts </a>
+                            in February 2021. As a small game server and hosting provider, we saw quick success within
+                            the first month. It was by running this company that I learned a lot about Linux, SSH and
+                            networking. At our peak there were over 20 high-end servers that we had to maintain,
+                            although this did give me some powerful hardware to play around with, so I'm not complaining!
+                        </p>
+                    </div>
+                    <div>
+
                     </div>
                 </div>
             </div>
