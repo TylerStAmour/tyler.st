@@ -6,9 +6,9 @@ import {useState} from "react";
 export default () => {
     const [hover, setHover] = useState(false)
     return (
-        <div className={"grid grid-cols-6 bg-gray-200 pt-12 pb-16 pl-8 pr-8 sm:pl-32 sm:pr-32"}>
+        <div className={"grid grid-cols-6 bg-gray-200 pt-12 pb-12 pl-8 pr-8 sm:pl-32 sm:pr-32"}>
             <div className={"flex col-span-2 items-center"}>
-                <p className={"text-4xl"}>Tyler St-Amour</p>
+                <p className={"text-4xl font-title"}>Tyler St-Amour</p>
             </div>
             <div className={"flex flex-row col-span-4 p-4 justify-between text-3xl text-gray-600"}>
                 <div className={"hover:text-secondary hover:-translate-y-0.5 duration-300"}>
