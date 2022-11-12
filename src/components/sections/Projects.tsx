@@ -12,8 +12,8 @@ export default () => (
                         <a className={"text-secondary"} href={"https://aurorahosts.com/"} target={"_blank"}> AuroraHosts </a>
                         in February 2021. As a small game server and hosting provider, we saw quick success within
                         the first month. It was by running this company that I learned a lot about Linux, SSH and
-                        networking. At our peak there were over 20 high-end servers that we had to maintain,
-                        although this did give me some powerful hardware to play around with, so I'm not complaining!
+                        networking. At our peak there were over 20 high-end machines that we had to maintain,
+                        though this did give me some powerful hardware to play around with, so I'm not complaining!
                     </p>
                 </div>
                 <div className={"grid grid-cols-2 gap-2 sm:flex sm:justify-around sm:flex-row p-1 pl-4 pr-4 rounded-lg bg-gray-200"}>
@@ -35,15 +35,10 @@ export default () => (
                     </div>
                 </div>
             </div>
-
-            <div>
-                <img src={"/illustrations/1920x1080placeholder.png"}/>
-            </div>
+            <img className={"rounded-md"} src={"/illustrations/aurora.png"}/>
         </div>
         <div className={"flex flex-col-reverse sm:grid sm:grid-cols-2 mt-20 gap-16 mb-12"}>
-            <div>
-                <img src={"/illustrations/1920x1080placeholder.png"}/>
-            </div>
+            <img className={"rounded-md"} src={"/illustrations/panel.png"}/>
             <div className={"flex flex-col grow justify-between"}>
                 <div className={"flex flex-col mb-4"}>
                     <p className={"text-4xl mb-4"}>AuroraHosts Control Panel</p>
