@@ -1,26 +1,11 @@
 import Navigation from "../components/sections/Navigation";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {
-    faReact,
-    faJs,
-    faHtml5,
-    faCss3Alt,
-    faGolang,
-    faJava,
-    faPython,
-    faLinux,
-} from "@fortawesome/free-brands-svg-icons"
-import {
-    faDatabase,
-    faCircle
-} from "@fortawesome/free-solid-svg-icons"
 import Footer from "../components/sections/Footer";
 import Projects from "../components/sections/Projects";
 import About from "../components/sections/About";
 
 export default () => (
     <>
-        <div className={"pl-8 pr-8 sm:pl-24 sm:pr-24 mb-20"}>
+        <div className={"pl-8 pr-8 sm:pl-24 sm:pr-24 2xl:pl-32 2xl:pr-32 mb-20"}>
             <div className={"mt-10 mb-14 sm:mb-28"}>
                 <Navigation/>
             </div>
@@ -41,7 +26,7 @@ export default () => (
                 </div>
             </div>
             <div className={"mt-24 sm:mt-48"}>
-                <img src={"/svg/blob.svg"} className={"absolute left-[10%] -mt-52 opacity-10"} style={{ zIndex: - 1 }}/>
+                <img src={"/svg/blob.svg"} className={"absolute left-[10%] select-none -mt-52 opacity-10"} style={{ zIndex: - 1 }}/>
                 <p className={"text-4xl mb-4 font-title"}>Where I started...</p>
                 <About/>
             </div>

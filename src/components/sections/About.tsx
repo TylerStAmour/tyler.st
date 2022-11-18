@@ -12,7 +12,7 @@ import {
 import {faDatabase} from "@fortawesome/free-solid-svg-icons";
 
 export default () => (
-    <div className={"flex flex-col sm:grid sm:grid-cols-2 gap-16"}>
+    <div className={"flex flex-col sm:grid sm:grid-cols-2 gap-16 2xl:gap-40"}>
         <div>
             <p className={"text-md"}>
                 <span className={"text-secondary font-semibold"}>Hey!</span> I'm Tyler, I started out my

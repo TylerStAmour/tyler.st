@@ -3,7 +3,7 @@ import {faCircle} from "@fortawesome/free-solid-svg-icons";
 
 export default () => (
     <div>
-        <div className={"flex flex-col sm:grid sm:grid-cols-2 mt-20 gap-16 mb-12"}>
+        <div className={"flex flex-col sm:grid sm:grid-cols-2 mt-20 gap-16 2xl:gap-48 mb-12"}>
             <div className={"flex flex-col grow justify-between"}>
                 <div className={"flex flex-col mb-4"}>
                     <p className={"text-4xl mb-4"}>AuroraHosts Ltd</p>
@@ -37,8 +37,8 @@ export default () => (
             </div>
             <img className={"rounded-md"} src={"/illustrations/aurora.png"}/>
         </div>
-        <img src={"/svg/blob-2.svg"} className={"absolute left-1/3 -mt-52 opacity-20"} style={{ zIndex: - 1 }}/>
-        <div className={"flex flex-col-reverse sm:grid sm:grid-cols-2 mt-20 gap-16 mb-12"}>
+        <img src={"/svg/blob-2.svg"} className={"absolute left-1/3 -mt-52 opacity-20 select-none"} style={{ zIndex: - 1 }}/>
+        <div className={"flex flex-col-reverse sm:grid sm:grid-cols-2 mt-20 gap-16 2xl:gap-48 mb-12"}>
             <img className={"rounded-md"} src={"/illustrations/panel.png"}/>
             <div className={"flex flex-col grow justify-between"}>
                 <div className={"flex flex-col mb-4"}>
