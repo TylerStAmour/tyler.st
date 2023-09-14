@@ -15,7 +15,7 @@ export default () => {
                 <p className={"text-4xl 2xl:text-6xl font-title"}>Tyler St-Amour</p>
                 <p className={"text-lg 2xl:text-2xl text-gray-600"}>Based in Hamilton, Ontario</p>
             </div>
-            <div className={"flex flex-row p-4 md:gap-16 2xl:gap-20 justify-between text-3xl text-gray-600"}>
+            <div className={"flex flex-row p-4 md:gap-16 2xl:gap-20 justify-between items-center text-3xl text-gray-600"}>
                 <a href={"mailto:tylerstamour1@gmail.com"}
                    className={"transition hover:-translate-y-0.5 duration-500"}
                    onMouseEnter={() => setHoverMail(true)} onMouseLeave={() => setHoverMail(false)}>
