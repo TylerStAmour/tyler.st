@@ -1,4 +1,3 @@
-import Navigation from "../components/sections/Navigation";
 import Footer from "../components/sections/Footer";
 import Projects from "../components/sections/Projects";
 import About from "../components/sections/About";
@@ -6,9 +5,6 @@ import About from "../components/sections/About";
 export default () => (
     <>
         <div className={"pl-8 pr-8 sm:pl-24 sm:pr-24 2xl:pl-32 2xl:pr-32 mb-20"}>
-            <div className={"mt-10 mb-14 sm:mb-28"}>
-                <Navigation/>
-            </div>
             <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-4"}>
                 <div className={"flex flex-col justify-center sm:mb-0 mb-10"}>
                     <p className={"text-2xl text-secondary"}>
