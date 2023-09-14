@@ -10,10 +10,10 @@ export default () => {
     const [hoverMail, setHoverMail] = useState(false)
 
     return (
-        <div className={"flex justify-between bg-gray-200 pt-12 pb-12 pl-8 pr-8 sm:pl-32 sm:pr-32"}>
-            <div className={"flex flex-col items-start"}>
-                <p className={"text-4xl font-title"}>Tyler St-Amour</p>
-                <p className={"text-lg text-gray-600"}>Based in Hamilton, Ontario</p>
+        <div className={"flex flex-col md:justify-between bg-gray-200 pt-12 pb-4 sm:pb-12 pl-8 pr-8 sm:pl-32 sm:pr-32"}>
+            <div className={"flex flex-col items-start mb-6"}>
+                <p className={"text-4xl 2xl:text-6xl font-title"}>Tyler St-Amour</p>
+                <p className={"text-lg  2xl:text-2xl text-gray-600"}>Based in Hamilton, Ontario</p>
             </div>
             <div className={"flex flex-row p-4 gap-8 justify-between text-3xl text-gray-600"}>
                 <a href={"mailto:tylerstamour1@gmail.com"}
