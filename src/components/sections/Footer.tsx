@@ -1,31 +1,42 @@
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {useState} from "react";
 
 export default () => {
-    const [hover, setHover] = useState(false)
+    const [hoverGit, setHoverGit] = useState(false)
+    const [hoverLinkedin, setHoverLinkedin] = useState(false)
+    const [hoverMail, setHoverMail] = useState(false)
+
     return (
-        <div className={"grid grid-cols-6 bg-gray-200 pt-12 pb-12 pl-8 pr-8 sm:pl-32 sm:pr-32"}>
-            <div className={"flex col-span-2 items-center"}>
+        <div className={"flex justify-between bg-gray-200 pt-12 pb-12 pl-8 pr-8 sm:pl-32 sm:pr-32"}>
+            <div className={"flex flex-col items-start"}>
                 <p className={"text-4xl font-title"}>Tyler St-Amour</p>
+                <p className={"text-lg text-gray-600"}>Based in Hamilton, Ontario</p>
             </div>
-            <div className={"flex flex-row col-span-4 p-4 justify-between text-3xl text-gray-600"}>
-                <div className={"hover:text-secondary hover:-translate-y-0.5 duration-300"}>
-                    <Link to={"/projects"}>Projects</Link>
-                </div>
-                <div className={"hover:text-secondary hover:-translate-y-0.5 duration-300"}>
-                    <Link to={"/about"}>About Me</Link>
-                </div>
-                <div className={"hover:text-secondary hover:-translate-y-0.5 duration-300"}>
-                    <Link to={"/contact"}>Contact</Link>
-                </div>
+            <div className={"flex flex-row p-4 gap-8 justify-between text-3xl text-gray-600"}>
+                <a href={"mailto:tylerstamour1@gmail.com"}
+                   className={"transition hover:-translate-y-0.5 duration-500"}
+                   onMouseEnter={() => setHoverMail(true)} onMouseLeave={() => setHoverMail(false)}>
+                    <FontAwesomeIcon icon={faEnvelope} fixedWidth size={"lg"}
+                                     color={hoverMail ? "#6600FF" : "black"}
+                                     className={"duration-500 transition"}/>
+                </a>
                 <a href={"https://github.com/TylerStAmour"}
                    target={"_blank"}
                    className={"transition hover:-translate-y-0.5 duration-500"}
-                   onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+                   onMouseEnter={() => setHoverGit(true)} onMouseLeave={() => setHoverGit(false)}>
                     <FontAwesomeIcon icon={faGithub} fixedWidth size={"lg"}
-                                     color={hover ? "#6600FF" : "black"}
+                                     color={hoverGit ? "#6600FF" : "black"}
+                                     className={"duration-500 transition"}/>
+                </a>
+                <a href={"https://www.linkedin.com/in/tyler-st-amour-bb6a8025b/"}
+                   target={"_blank"}
+                   className={"transition hover:-translate-y-0.5 duration-500"}
+                   onMouseEnter={() => setHoverLinkedin(true)} onMouseLeave={() => setHoverLinkedin(false)}>
+                    <FontAwesomeIcon icon={faLinkedin} fixedWidth size={"lg"}
+                                     color={hoverLinkedin ? "#6600FF" : "black"}
                                      className={"duration-500 transition"}/>
                 </a>
             </div>

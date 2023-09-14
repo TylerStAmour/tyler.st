@@ -5,7 +5,7 @@ import About from "../components/sections/About";
 export default () => (
     <>
         <div className={"pl-8 pr-8 sm:pl-24 sm:pr-24 2xl:pl-32 2xl:pr-32 mb-20"}>
-            <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-4"}>
+            <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-4 mt-12"}>
                 <div className={"flex flex-col justify-center sm:mb-0 mb-10"}>
                     <p className={"text-2xl text-secondary"}>
                         Hi, my name is
