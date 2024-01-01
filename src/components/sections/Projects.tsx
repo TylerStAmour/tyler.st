@@ -9,11 +9,11 @@ export default () => (
                     <p className={"text-4xl mb-4"}>AuroraHosts Ltd</p>
                     <p>
                         Myself along with 4 other partners founded
-                        <a className={"text-secondary"} href={"https://aurorahosts.com/"} target={"_blank"}> AuroraHosts </a>
-                        in February 2021. As a small game server and hosting provider, we saw quick success within
-                        the first month. It was by running this company that I learned a lot about Linux, SSH and
-                        networking. At our peak there were over 20 high-end machines that we had to maintain,
-                        though this did give me some powerful hardware to play around with, so I'm not complaining!
+                        <a className={"text-secondary"} href={"https://aurorahosts.com/"} target={"_blank"}>AuroraHosts</a>
+                        in late January 2021. As a small game server and hosting provider, we saw quick success within
+                        the first 3 months. It was by running this company that I learned a lot about Linux, SSH, low-level
+                        networking, front-end development, and back-end development. Since then, we've served over 1600
+                        clients and managed dozens of machines.
                     </p>
                 </div>
                 <div className={"grid grid-cols-2 gap-2 sm:flex sm:justify-around sm:flex-row p-1 pl-4 pr-4 rounded-lg bg-gray-200"}>
@@ -45,11 +45,11 @@ export default () => (
                     <p className={"text-4xl mb-4"}>AuroraHosts Control Panel</p>
                     <p>
                         Our main control panel for clients at AuroraHosts is based off
-                        <a className={"text-secondary"} href={"https://github.com/pterodactyl/panel"} target={"_blank"}> Pterodactyl</a>,
-                        an open source project built with Golang, Laravel, React and TypeScript. To give our clients
-                        a unique experience, I had to build additional features and functionality into our panel.
-                        This led me to learning Go and becoming familiar with PHP and full stack development, as
-                        well as expanding my knowledge with React.
+                        <a className={"text-secondary"} href={"https://github.com/pterodactyl/panel"} target={"_blank"}>Pterodactyl</a>,
+                        an open source project built with Golang, Laravel, React, TypeScript, and PHP. To give our clients
+                        a unique experience, I've had to build additional features and functionality into our panel.
+                        This led me to learning Go, TypeScript, PHP, and becoming familiar with full stack development, as
+                        well as expanding my knowledge with React and Laravel.
                     </p>
                 </div>
                 <div className={"grid grid-cols-2 gap-2 sm:flex sm:justify-around sm:flex-row p-1 pl-4 pr-4 rounded-lg bg-gray-200"}>

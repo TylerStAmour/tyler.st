@@ -15,15 +15,16 @@ export default () => (
     <div className={"flex flex-col sm:grid sm:grid-cols-2 gap-16 2xl:gap-40"}>
         <div>
             <p className={"text-md"}>
-                <span className={"text-secondary font-semibold"}>Hey!</span> I'm Tyler, I started out my
-                computer science journey in 2014. Let's just say I was stuck in tutorial hell for the next
-                6 years, so we'll skip that.
+                <span className={"text-secondary font-semibold"}>Hey!</span> I'm Tyler, I first attempted learning to code in 2014,
+                but didn't get very far. For a few years I kept trying and failing, then returning to it a few months later,
+                only to give up again.
             </p>
-            <p className={"text-md mt-3"}>Java was my first proper introduction to programming. From there
+            <p className={"text-md mt-3"}>In 2020 however, I came across an online open Java course by the University of Helsinki.
+                This gave me a new and proper introduction to programming and got me started with Java. From there
                 I've branched to web development through the <span className={"text-secondary"}>React framework</span>,
                 to backend development in Golang with the help of the
                 <a href={"https://github.com/gin-gonic/gin"} target={"_blank"} className={"text-secondary"}> Gin </a>
-                framework, and to Linux system administration through one of my projects.
+                framework, to Linux system administration through one of my projects, and so much more.
             </p>
             <p className={"text-md mt-3"}>
                 See some of the skills I've learned over the years on the right.
