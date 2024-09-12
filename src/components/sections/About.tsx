@@ -12,69 +12,48 @@ import {
 import {faDatabase} from "@fortawesome/free-solid-svg-icons";
 
 export default () => (
-    <div className={"flex flex-col sm:grid sm:grid-cols-2 gap-16 2xl:gap-40"}>
-        <div>
-            <p className={"text-md"}>
-                <span className={"text-secondary font-semibold"}>Hey!</span> I'm Tyler, I first attempted learning to code in 2014,
-                but didn't get very far. For a few years I kept trying and failing, then returning to it a few months later,
-                only to give up again.
+    <div className={"flex flex-col gap-4 xl:gap-10"}>
+        <div className={"sm:grid sm:grid-cols-5 gap-16 2xl:gap-40 mb-8 sm:mb-0"}>
+            <p className={"text-md col-span-3 mb-4 sm:mb-0"}>
+                I’m Tyler, I’ve been programming for a few years now, and I’m currently studying electrical engineering
+                at McMaster University. After learning for a few years, I started modifying full-stack applications for
+                my server hosting company, Aurorahosts. Through my company, I’ve been able to learn a lot about
+                networking, Linux, and applications development. I even worked on a network filter that ran directly
+                within the Linux kernel, as part of an initiative to prevent denial-of-service attacks (personal
+                favorite project).
             </p>
-            <p className={"text-md mt-3"}>In 2020 however, I came across an online open Java course by the University of Helsinki.
-                This gave me a new and proper introduction to programming and got me started with Java. From there
-                I've branched to web development through the <span className={"text-secondary"}>React framework</span>,
-                to backend development in Golang with the help of the
-                <a href={"https://github.com/gin-gonic/gin"} target={"_blank"} className={"text-secondary"}> Gin </a>
-                framework, to Linux system administration through one of my projects, and so much more.
-            </p>
-            <p className={"text-md mt-3"}>
-                See some of the skills I've learned over the years on the right.
-            </p>
+            <div className={"items-center content-center col-span-2"}>
+                <a href={"https://aurorahosts.com"} target={"_blank"}>
+                    <img src={"/svg/aurora-logo.svg"} alt={"Aurorahosts Logo"}/>
+                </a>
+            </div>
         </div>
-        <div className={"grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-2 mb-1"}>
-            <div className={"flex flex-row items-center"}>
-                <FontAwesomeIcon className={"pr-2 border-r border-secondary"} size={"2xl"} color={"#6600FF"}
-                                 icon={faReact} fixedWidth/>
-                <p className={"text-lg pl-2"}>React</p>
+        <div className={"sm:grid sm:grid-cols-5 gap-16 2xl:gap-40 mb-8 sm:mb-0"}>
+            <p className={"text-md col-span-3 mb-4 sm:mb-0"}>
+                Most recently, I’ve been working at Auper Motorcycles, leading the development of our vehicle dashboard
+                for our electric motorcycles. My hope with this project is to create a unique user experience, with tight
+                integrations through Bluetooth and remote connectivity to further promote the idea of a software-defined
+                vehicle. Through this position, I’ve picked up many new skills surrounding Bluetooth Low Energy, SPI,
+                embedded systems, Linux, NFC, GNSS, wireless networking, and more.
+            </p>
+            <div className={"items-center content-center col-span-2"}>
+                <a href={"https://aupermotorcycles.com"} target={"_blank"}>
+                    <img src={"/svg/auper-logo.svg"} alt={"Auper Motorcycles Logo"}/>
+                </a>
             </div>
-            <div className={"flex flex-row items-center"}>
-                <FontAwesomeIcon className={"pr-2 border-r border-secondary"} size={"2xl"} color={"#6600FF"}
-                                 icon={faJs} fixedWidth/>
-                <p className={"text-lg pl-2"}>JavaScript</p>
-            </div>
-            <div className={"flex flex-row items-center"}>
-                <FontAwesomeIcon className={"pr-2 border-r border-secondary"} size={"2xl"} color={"#6600FF"}
-                                 icon={faHtml5} fixedWidth/>
-                <p className={"text-lg pl-2"}>HTML</p>
-            </div>
-            <div className={"flex flex-row items-center"}>
-                <FontAwesomeIcon className={"pr-2 border-r border-secondary"} size={"2xl"} color={"#6600FF"}
-                                 icon={faCss3Alt} fixedWidth/>
-                <p className={"text-lg pl-2"}>CSS</p>
-            </div>
-            <div className={"flex flex-row items-center"}>
-                <FontAwesomeIcon className={"pr-2 border-r border-secondary"} size={"2xl"} color={"#6600FF"}
-                                 icon={faGolang} fixedWidth/>
-                <p className={"text-lg pl-2"}>Golang</p>
-            </div>
-            <div className={"flex flex-row items-center"}>
-                <FontAwesomeIcon className={"pr-2 border-r border-secondary"} size={"2xl"} color={"#6600FF"}
-                                 icon={faJava} fixedWidth/>
-                <p className={"text-lg pl-2"}>Java</p>
-            </div>
-            <div className={"flex flex-row items-center"}>
-                <FontAwesomeIcon className={"pr-2 border-r border-secondary"} size={"2xl"} color={"#6600FF"}
-                                 icon={faPython} fixedWidth/>
-                <p className={"text-lg pl-2"}>Python</p>
-            </div>
-            <div className={"flex flex-row items-center"}>
-                <FontAwesomeIcon className={"pr-2 border-r border-secondary"} size={"2xl"} color={"#6600FF"}
-                                 icon={faDatabase} fixedWidth/>
-                <p className={"text-lg pl-2"}>MySQL</p>
-            </div>
-            <div className={"flex flex-row items-center justify-center sm:justify-start mt-2 sm:mt-0 col-span-2 sm:col-span-1"}>
-                <FontAwesomeIcon className={"pr-2 border-r border-secondary"} size={"2xl"} color={"#6600FF"}
-                                 icon={faLinux} fixedWidth/>
-                <p className={"text-lg pl-2"}>Linux</p>
+        </div>
+        <div className={"sm:grid sm:grid-cols-5 gap-16 2xl:gap-40"}>
+            <p className={"text-md col-span-3 mb-4 sm:mb-0"}>
+                At McMaster, I’m a software team member on our FSAE team, which aims to build a ¼ scale Formula-1 style
+                racecar. With this team, I’ve worked on developing a hardware-in-the-loop (HIL) testing framework to
+                perform systems-level tests for our electrical systems. Currently, I’m developing firmware on the STM
+                platform to control our low-voltage systems. Moreover, I’ve used my skills in system administration
+                to support our team’s backend services.
+            </p>
+            <div className={"flex items-center content-center col-span-2"}>
+                <a href={"https://macformulaelectric.com"} target={"_blank"}>
+                    <img src={"/img/macfe-logo.png"} alt={"MAC Formula Electric Logo"}/>
+                </a>
             </div>
         </div>
     </div>

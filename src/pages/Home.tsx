@@ -14,7 +14,7 @@ export default () => (
                         Tyler St-Amour,
                     </p>
                     <p className={"text-xl text-gray-600 sm:max-w-xl"}>
-                        A hobbyist developer and full-time student. My current interests are in building full stack applications to broaden my skillset and knowledge.
+                        A software engineer and engineering student. I’m passionate about a wide range of software development, from high-level cloud architecture, to low-level embedded systems. My current interests are in low-level networking and developing on RTOS platforms.
                     </p>
                 </div>
                 <div className={"flex justify-center"}>
@@ -23,7 +23,7 @@ export default () => (
             </div>
             <div className={"mt-24 sm:mt-48"}>
                 <img src={"/svg/blob.svg"} className={"absolute left-0 sm:left-[10%] select-none -mt-52 opacity-10"} style={{ zIndex: - 1 }}/>
-                <p className={"text-4xl mb-4 font-title"}>Where I started...</p>
+                <p className={"text-4xl mb-4 font-title"}>About me</p>
                 <About/>
             </div>
             <div className={"pb-20 pt-16 sm:pb-32 sm:pt-24"}>
