@@ -1,16 +1,3 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {
-    faCss3Alt,
-    faGolang,
-    faHtml5,
-    faJava,
-    faJs,
-    faLinux,
-    faPython,
-    faReact
-} from "@fortawesome/free-brands-svg-icons";
-import {faDatabase} from "@fortawesome/free-solid-svg-icons";
-
 export default () => (
     <div className={"flex flex-col gap-4 xl:gap-10"}>
         <div className={"sm:grid sm:grid-cols-5 gap-16 2xl:gap-40 mb-8 sm:mb-0"}>

@@ -1,6 +1,7 @@
-import Footer from "../components/sections/Footer";
-import Projects from "../components/sections/Projects";
-import About from "../components/sections/About";
+import Footer from "../sections/Footer";
+import Projects from "../sections/Projects";
+import About from "../sections/About";
+import Future from "../sections/Future";
 
 export default () => (
     <>
@@ -18,7 +19,7 @@ export default () => (
                     </p>
                 </div>
                 <div className={"flex justify-center"}>
-                    <img src={"/illustrations/coding.svg"} className={"sm:max-w-lg"}/>
+                    <img src={"/img/coding.svg"} className={"sm:max-w-lg"}/>
                 </div>
             </div>
             <div className={"mt-24 sm:mt-48"}>
@@ -31,6 +32,10 @@ export default () => (
             </div>
             <p className={"text-4xl text-center"}>Some highlighted projects</p>
             <Projects/>
+            <p className={"text-4xl text-center mt-24 mb-4"}>What's next?</p>
+            <div className={"flex w-full justify-center"}>
+                <Future/>
+            </div>
         </div>
         <div>
             <Footer/>
