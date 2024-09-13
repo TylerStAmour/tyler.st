@@ -1,5 +1,5 @@
 export default () => (
-    <div className={"w-1/2"}>
+    <div className={"sm:w-1/2"}>
         <p>
             For the future, my goal is to familiarize myself with development on RTOS platforms (specifically Zephyr RTOS).
             I’m hoping to develop some networking applications for RTOS that would improve connectivity for IoT devices

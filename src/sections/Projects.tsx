@@ -12,10 +12,11 @@ interface SubsectionProps {
     flipped?: boolean;
     // Mainly so I can add an outline to already white images
     imageClass?: string;
+    className?: string;
 }
 
 const Subsection = (props: SubsectionProps) => (
-    <div className={`sm:grid sm:grid-cols-2 gap-16 2xl:gap-52`}>
+    <div className={`lg:grid lg:grid-cols-2 gap-16 2xl:gap-52 ${props.className}`}>
         <div className={"flex flex-col grow justify-between"}>
             <div className={"flex flex-col gap-4"}>
                 <p className={"text-4xl"}>{props.title}</p>
@@ -30,7 +31,7 @@ const Subsection = (props: SubsectionProps) => (
                 {props.text}
             </div>
         </div>
-        <img className={`rounded-md mt-6 sm:mt-0 ${props.flipped && "order-first"} ${props.imageClass}`}
+        <img className={`rounded-md mt-6 lg:mt-0 ${props.flipped && "order-first"} ${props.imageClass}`}
              src={props.imageSource}
              alt={props.imageAlt}
         />
@@ -38,8 +39,9 @@ const Subsection = (props: SubsectionProps) => (
 )
 
 export default () => (
-    <div className={"grid gap-24"}>
+    <div className={""}>
         <Subsection
+            className={"mb-24"}
             title={"AuroraHosts Ltd"}
             imageSource={"/img/aurora.png"}
             imageAlt={"Aurorahosts website front page"}
@@ -55,10 +57,9 @@ export default () => (
                 </p>
             }
         />
-        <div>
-            <img src={"/svg/blob-2.svg"} className={"absolute left-0 sm:left-1/3 -mt-28 sm:-mt-52 opacity-20 select-none"} style={{ zIndex: - 1 }}/>
-        </div>
+        <img src={"/svg/blob-2.svg"} className={"absolute left-0 sm:left-1/3 -mt-28 sm:-mt-52 opacity-20 select-none"} style={{ zIndex: - 1 }}/>
         <Subsection
+            className={"mb-24"}
             title={"Aurorahosts Control Panel"}
             imageSource={"/img/panel.png"}
             imageAlt={"Aurorahosts control panel preview"}
@@ -75,6 +76,7 @@ export default () => (
             }
         />
         <Subsection
+            className={"mb-24"}
             title={"Hardware-in-the-Loop (HIL)"}
             imageSource={"/img/hil.png"}
             imageAlt={"HIL web control panel preview"}
@@ -90,6 +92,7 @@ export default () => (
             imageClass={"border-2 border-slate-300"}
         />
         <Subsection
+            className={"mb-24"}
             title={"Auper's Vehicle Dashboard"}
             imageSource={"/img/dashboard.png"}
             imageAlt={"A preview of Auper's vehicle dashboard"}

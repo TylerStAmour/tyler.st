@@ -9,7 +9,7 @@ interface SubsectionProps {
 }
 
 const Subsection = (props: SubsectionProps) => (
-    <div className={"flex flex-row gap-16 2xl:gap-52 mb-8 sm:mb-0"}>
+    <div className={"flex flex-col lg:flex-row gap-16 2xl:gap-52 mb-8 lg:mb-0"}>
         <div className={"lg:w-1/2 text-md mb-4 sm:mb-0"}>
             {props.text}
         </div>
