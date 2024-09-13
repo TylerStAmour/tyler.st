@@ -24,7 +24,7 @@ export default () => (
                     <img src={"/img/coding.svg"} className={"sm:max-w-lg"}/>
                 </div>
             </div>
-            <div className={"mt-24 sm:mt-48"}>
+            <div className={"mt-24 sm:mt-40"}>
                 <img src={"/svg/blob.svg"} className={"absolute left-0 sm:left-[10%] select-none -mt-52 opacity-10"} style={{ zIndex: - 1 }}/>
                 <p className={"text-4xl mb-4 font-title"}>About me</p>
                 <About/>
