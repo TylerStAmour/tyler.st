@@ -55,7 +55,7 @@ export default () => (
         <Subsection
             imageSource={"/img/macfe-logo.png"}
             imageAlt={"MAC Formula Electric Logo"}
-            imageHref={"https://macformulaelectric.com"}
+            imageHref={"https://macformularacing.com"}
             text={
                 <p>
                     At McMaster, I’m a software team member on our FSAE team, which aims to build a ¼ scale Formula-1 style
