@@ -5,7 +5,7 @@ import Future from "../sections/Future";
 
 export default () => (
     <>
-        <div className={"pl-8 pr-8 sm:pl-24 sm:pr-24 2xl:pl-32 2xl:pr-32 mb-20"}>
+        <div className={"px-8 sm:px-24 2xl:px-40 mb-20"}>
             <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-4 mt-12"}>
                 <div className={"flex flex-col justify-center sm:mb-0 mb-10"}>
                     <p className={"text-2xl text-secondary"}>
@@ -30,7 +30,7 @@ export default () => (
             <div className={"pb-20 pt-16 sm:pb-32 sm:pt-24"}>
                 <img className={"absolute left-0"} src={"/svg/line.svg"}/>
             </div>
-            <p className={"text-4xl text-center"}>Some highlighted projects</p>
+            <p className={"text-4xl text-center mb-20"}>Some highlighted projects</p>
             <Projects/>
             <p className={"text-4xl text-center mt-24 mb-4"}>What's next?</p>
             <div className={"flex w-full justify-center"}>
