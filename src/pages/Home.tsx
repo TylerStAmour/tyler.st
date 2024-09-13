@@ -15,7 +15,9 @@ export default () => (
                         Tyler St-Amour,
                     </p>
                     <p className={"text-xl text-gray-600 sm:max-w-xl"}>
-                        A software engineer and engineering student. I’m passionate about a wide range of software development, from high-level cloud architecture, to low-level embedded systems. My current interests are in low-level networking and developing on RTOS platforms.
+                        A software engineer and electrical engineering student. I’m passionate about a wide range of
+                        software development, from high-level cloud architecture, to low-level embedded systems. My
+                        current interests are in low-level networking and developing on RTOS platforms.
                     </p>
                 </div>
                 <div className={"flex justify-center"}>
