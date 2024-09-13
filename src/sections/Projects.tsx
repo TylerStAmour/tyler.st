@@ -15,7 +15,7 @@ interface SubsectionProps {
 }
 
 const Subsection = (props: SubsectionProps) => (
-    <div className={`flex ${props.flipped ? "flex-row-reverse" : "flex-row"} sm:grid sm:grid-cols-2 gap-16 2xl:gap-52`}>
+    <div className={`sm:grid sm:grid-cols-2 gap-16 2xl:gap-52`}>
         <div className={"flex flex-col grow justify-between"}>
             <div className={"flex flex-col gap-4"}>
                 <p className={"text-4xl"}>{props.title}</p>
@@ -30,7 +30,7 @@ const Subsection = (props: SubsectionProps) => (
                 {props.text}
             </div>
         </div>
-        <img className={`rounded-md ${props.flipped && "order-first"} ${props.imageClass}`}
+        <img className={`rounded-md mt-6 sm:mt-0 ${props.flipped && "order-first"} ${props.imageClass}`}
              src={props.imageSource}
              alt={props.imageAlt}
         />
